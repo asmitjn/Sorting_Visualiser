@@ -1,4 +1,3 @@
-/* Made by Asmit */
 
 function Insertion()
 {
