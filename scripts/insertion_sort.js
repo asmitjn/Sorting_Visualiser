@@ -13,7 +13,7 @@ function Insertion()
 
     for(var j=0;j<array_size;j++)
     {
-        div_update(divs[j],div_sizes[j],"yellow");//Color update
+        div_update(divs[j],div_sizes[j],"yellow");      //Color update, present in visualisation.js
 
         var key= div_sizes[j];
         var i=j-1;

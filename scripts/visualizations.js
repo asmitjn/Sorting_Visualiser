@@ -26,10 +26,10 @@ function vis_speed()
 }
 
 var delay_time=10000/(Math.floor(array_size/10)*speed);        //Decrease numerator to increase speed.
-var c_delay=0;//This is updated ov every div change so that visualization is visible.
+var c_delay=0;                                                 //This is updated on every div change so that visualization is visible.
 
-function div_update(cont,height,color)
-{
+function div_update(cont,height,color)                        // changes color and height according to the algorithm running
+{ 
     window.setTimeout(function(){
         cont.style=" margin:0% " + margin_size + "%; width:" + (100/array_size-(2*margin_size)) + "%; height:" + height + "%; background-color:" + color + ";";
     },c_delay+=delay_time);
